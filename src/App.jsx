@@ -13,6 +13,7 @@ import AddEmployee from './component/AddEmployee'
 import EditEmployee from './component/EditEmployee'
 import Start from './component/Start'
 import EmployeeLogin from './component/EmployeeLogin'
+import EmployeeDetail from './component/EmployeeDetail'
 
 function App() {
 
@@ -35,6 +36,7 @@ function App() {
         <Route path='/dashboard/add_category' element={<AddCategory />}></Route>
         <Route path='/dashboard/add_employee' element={<AddEmployee />}></Route>
         <Route path='/dashboard/edit_employee/:id' element={<EditEmployee />}></Route>
+        <Route path='/employee_detail/:id' element={<EmployeeDetail/>}></Route>
       </Route>
     </Routes>
   </BrowserRouter>
